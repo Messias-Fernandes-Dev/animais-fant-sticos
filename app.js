@@ -1,24 +1,33 @@
-const menuAtivo = document.querySelectorAll('.menu a');
+//Eventos 
 
-menuAtivo.forEach((item) =>{
-  item.classList.add('ativo')
-})
+const linkExterno = document.querySelector("a[href^='https']")
 
-menuAtivo.forEach((item) =>{
-  item.classList.remove('ativo')
-})
 
-menuAtivo[0].classList.add('ativo')
+function handleLink(Event) {
+  Event.preventDefault();
+  console.log(Event)
+}
 
-const imgs = document.querySelectorAll('img')
+linkExterno.addEventListener('click', handleLink) 
 
-imgs.forEach((item) => {
-  const possuiAtributo = item.hasAttribute('alt')
-  console.log(possuiAtributo, item)
-})
+const h1 = document.querySelector('h1')
 
-const link = document.querySelector('a[href^="#D"]')
-link.setAttribute('href', 'https://google.com.br')
+function handleEvent(event) {
+  console.log(event, event.type)
+}
 
-console.log(link)
+h1.addEventListener('click', handleEvent);
+h1.addEventListener('mousemove', handleEvent);
 
+window.addEventListener('scroll', handleEvent)
+ window.addEventListener('resize', handleEvent)
+ window.addEventListener('keydown', handleEvent)
+
+function handleKeyboard(event){
+  if(event.key === 'z'){
+    document.body.classList.toggle('z')
+  }
+  
+}
+
+window.addEventListener('keydown', handleKeyboard)
