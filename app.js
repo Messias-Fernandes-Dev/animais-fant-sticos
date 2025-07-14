@@ -83,14 +83,4 @@ function initAnimacaoScroll() {
 
 initAnimacaoScroll();
 
-// const honda = new Carro("Honda", 3000);
-// const fiat = new Carro("Fiat", 4000);
 
-function Carro2(marca, precoInicial) {
-  const taxa = 1.2;
-  const precoFinal = precoInicial * taxa;
-  Carro2.marca = marca;
-  Carro2.preco = precoFinal;
-}
-
-const mazda = new Carro2("Mazda", 5000);
