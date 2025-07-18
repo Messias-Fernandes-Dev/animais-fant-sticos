@@ -1,24 +1,24 @@
-// const pais = 'Brasil';
-// const cidade = new String('Rio')
+const pais = 'Brasil';
+const cidade = new String('Rio')
 
-// const listaAnimais = ['Gato', 'Cachorro', 'Cavalo', 'Piaba', 'Porco']
+const listaAnimais = ['Gato', 'Cachorro', 'Cavalo', 'Piaba', 'Porco']
 
-// const list = document.querySelectorAll('li')
+const list = document.querySelectorAll('li')
 
-// const listaArray1 = Array.prototype.slice.call(list)
-// const arrayFrom = Array.from(list)
+const listaArray1 = Array.prototype.slice.call(list)
+const arrayFrom = Array.from(list)
 
-// list.forEach(item => {
-//   item.classList.add('ativo')
-// })
+list.forEach(item => {
+  item.classList.add('ativo')
+})
 
-// const Carro = {
-//   marca: 'Ford',
-//   preco: 2000,
-//   andar(){
-//     return true
-//   }
-// }
+const Carro = {
+  marca: 'Ford',
+  preco: 2000,
+  andar(){
+    return true
+  }
+}
 
 
 //Crie uma função construtora de Pessoa, deve conter: nome, sobrenome, idade. Crie um metodo de prototipo que retorne o nome completo da pessoa
