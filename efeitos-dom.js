@@ -1,0 +1,1 @@
+const sct = document.querySelectorAll('section')
